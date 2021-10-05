@@ -26,6 +26,9 @@ var taskDataObj = {
     type: taskTypeInput
 };
 
+var isEdit = formEl.hasAttribute("data-task-id");
+console.log(isEdit);
+
 //send it as an argument to createTaskEl
 createTaskEl(taskDataObj);
 
